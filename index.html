@@ -8,17 +8,21 @@
 </head>
 <body>
 <style>
-    body {
-        margin: auto;
+    .div {
+        display: flex;
+        justify-content: center;
     }
 </style>
-<h1 id="titel">
-    Glosor
-</h1>
-<h2 id="ordpåsvenska">
-    Ord på svenska: 
-</h2>
-<input type="text" id="inputbox"/>
+<div id="contents">
+    <input type="submit" value="Svara" onclick="kollasvar()">
+    <input type="text" id="inputbox"/>
+    <h1 id="titel">
+        Glosor
+    </h1>
+    <h2 id="ordpåsvenska">
+        Ord på svenska: 
+    </h2>
+</div>
 <script>
     let ordindex = 0
     const svenskaord = ["björn", "katt", "tack"]
@@ -51,5 +55,4 @@
     }
     }
 </script>
-<input type="submit" value="Svara" onclick="kollasvar()">
 </body>
